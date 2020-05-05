@@ -1,0 +1,23 @@
+.text-unisalle {
+    color: red !important;
+}
+
+.navbar {
+    background-color: #002648;
+}
+
+
+#header img {
+    width: 80px;
+}
+
+
+#footer {
+    background-color: #002648;
+}
+
+#footer a {
+    color:  #8DB9ED;
+    font-family: sans-serif;
+}
+
