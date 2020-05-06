@@ -32,6 +32,30 @@
     display: grid;
 }
 
+.btn-salle {
+    background-color:#002648;
+    color:white;
+
+}
+
+.btn-salle:hover {
+    background-color:#f6f6f6;
+    color:#8DB9ED;
+
+}
+
+.btn-comprar {
+    background-color:yellow;
+    color:red;
+
+}
+
+.btn-comprar:hover {
+    background-color:#f6f6f6;
+    color:#8DB9ED;
+
+}
+
 } 
 #carousel.overlay.container{
     align-items: center;
