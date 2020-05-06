@@ -9,51 +9,47 @@
     <link rel="stylesheet" href="index.css">
     <title>Clinica Veterinaria App</title>
   </head>
-  <body>
+  <body data-spy="scoll" data-target="#navbar" data-offset="57">
     <!--Header-->
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="img/pikachu.png" alt="logo">
-            Clínica Veterinaria UNISALLE
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+
+    <nav id="header" class="navbar navbar-expand-lg navbar-light" style="background-color: #002648;">
+      <a class="navbar-brand" href="#" style="color: #f6f6f6;">
+        <img src="img/pikachu.png" alt="logo">
+        Clinica Veterinaria UNISALLE
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #f6f6f6;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Agenda Cita <span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Servicios En Línea
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Farmacia</a>
-                <a class="dropdown-item" href="#">Asesoria Médica</a>
-                <a class="dropdown-item" href="#">Plataforma de pagos</a>
-                <a class="dropdown-item" href="#">Domicilios</a>
-              </div>  
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-unisalle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Necesitas Atención Inmediata?
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Videollamada</a>
-                <a class="dropdown-item" href="#">Atención Chat</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Asesoria de Exámenes</a>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#main" style="color:yellow;">Pide tu Cita</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#medicos" style="color:#f6f6f6;">Equipo Médico</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-unisalle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Necesitas servicio urgente?
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Videollamada</a>
+              <a class="dropdown-item" href="#">Chat</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Asesoria General</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style="color:#002648">Tienda en Linea</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <!--/Header-->
+    <!--</Header-->
+
+
+
 
     <!-- Main-->
     <main id="main">
@@ -73,11 +69,11 @@
               <div class="row">
                 <div class="col-md-6 offset-md-2 text-center text-md-left">
                   <h1>Siempre estamos para acompañarte</h1>
-                  <p class="d-none d-md-block">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, harum iure nesciunt ipsam illum voluptatum ut repudiandae atque, vero cupiditate saepe distinctio vel unde quaerat, sunt placeat totam dolorem magni maiores quasi deleniti iusto facere.
+                  <p class="d-none d-md-block" style="color:#f6f6f6">
+                    Te damos la facilidad de programar tu cita médica con antelación, para evitar molestas esperas y puedas aprovechar la máximo tu tiempo
                   </p>
                   <a href="#" class="btn btn-salle">Quiero Saber</a>
-                  <button class="btn btn-comprar" type="button">Comprar</button>
+                  <button class="btn btn-comprar" type="button">Pagar</button>
                 </div>
               </div>
             </div>
@@ -219,8 +215,8 @@
         </div>
 
         <div class="row">
-          <div class="col text-center">
-            Que te gustaría comentarnos ignite.
+          <div class="col text-center" ">
+            Tienes dudas sobre el <p><abbr data-toggle="tooltip" style="color: red" title="Visita nuestro blog">Coronvirus en Animales?</abbr></p>
             Como ha sido tu experiencia en la clínica
           </div>
         </div>
@@ -282,6 +278,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>
