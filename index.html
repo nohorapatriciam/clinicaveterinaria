@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="index.css">
     <title>Clinica Veterinaria App</title>
   </head>
-  <body data-spy="scoll" data-target="#navbar" data-offset="57">
+  <body data-spy="scroll" data-target="#navbarSupportedContent">
     <!--Header-->
 
-    <nav id="header" class="navbar navbar-expand-lg navbar-light" style="background-color: #002648;">
+    <nav id="header" class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #002648;">
       <a class="navbar-brand" href="#" style="color: #f6f6f6;">
         <img src="img/pikachu.png" alt="logo">
         Clinica Veterinaria UNISALLE
@@ -34,14 +34,14 @@
               Necesitas servicio urgente?
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Videollamada</a>
-              <a class="dropdown-item" href="#">Chat</a>
+              <a class="dropdown-item" href="#place-time">Videollamada</a>
+              <a class="dropdown-item" href="#place-time">Chat</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Asesoria General</a>
+              <a class="dropdown-item" href="#place-time">Asesoria General</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style="color:#002648">Tienda en Linea</a>
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" data-toggle="modal" data-target="#Modal-compra" style="color:#f6f6f6">Tienda en Linea</a>
           </li>
         </ul>
       </div>
@@ -73,7 +73,7 @@
                     Te damos la facilidad de programar tu cita médica con antelación, para evitar molestas esperas y puedas aprovechar la máximo tu tiempo
                   </p>
                   <a href="#" class="btn btn-salle">Quiero Saber</a>
-                  <button class="btn btn-comprar" type="button">Pagar</button>
+                  <button class="btn btn-comprar" href="#" type="button" data-toggle="modal" data-target="#Modal-compra">Comprar</button>
                 </div>
               </div>
             </div>
@@ -273,6 +273,56 @@
         </div>
     </footer>
   <!--/Footer-->
+
+
+
+<!-- Modal -->
+  <div class="modal fade" id="Modal-compra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Comprar</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-row">
+              <div class="form-group col">
+
+                <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Recuerda dejarnos tus datos</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Formas de Pago</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Efectivo en Caja</option>
+                      <option>Paypal</option>
+                      <option>Tarjeta Credito</option>
+                      <option>Tarjeta Debito</option>
+                    </select>
+                  </div>
+                </form>
+                <div class="alert alert-warning" role="alert">
+                  Recuerda que estamos para servirte!
+                </div>
+
+
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-comprar">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--/modal-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
