@@ -62,6 +62,15 @@
     display: grid;
 } 
 
+#place-time {
+    background-color: #35383B;
+    color:#8DB9ED;
+}
+
+#place-time img {
+    max-width: 100%;
+}
+
 #footer {
     background-color: #002648;
 }
