@@ -12,10 +12,9 @@
   <body data-spy="scroll" data-target="#navbarSupportedContent">
     <!--Header-->
 
-    <nav id="header" class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #002648;">
-      <a class="navbar-brand" href="#" style="color: #f6f6f6;">
-        <img src="img/pikachu.png" alt="logo">
-        Clinica Veterinaria UNISALLE
+    <nav id="header" class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color:white;">
+      <a class="navbar-brand" href="#" style="color: #b2b2b1;">
+        <img src="img/logosalle2.png" alt="logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #f6f6f6;">
         <span class="navbar-toggler-icon"></span>
@@ -24,14 +23,14 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#main" style="color:yellow;">Pide tu Cita</a>
+            <a class="nav-link" href="#main" style="color:#003057;">Pide tu Cita</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#medicos" style="color:#f6f6f6;">Equipo Médico</a>
+            <a class="nav-link" href="#medicos" style="color:#003057;">Servicios</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-unisalle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Necesitas servicio urgente?
+              Urgencia o Emergencia?
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#place-time">Videollamada</a>
@@ -41,7 +40,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" data-toggle="modal" data-target="#Modal-compra" style="color:#f6f6f6">Tienda en Linea</a>
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" data-toggle="modal" data-target="#Modal-compra" style="color:#003057">Pagos en Linea</a>
           </li>
         </ul>
       </div>
@@ -56,13 +55,10 @@
       <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img  class="d-block w-100" src="img/cirujano.jpg"alt="...">
+            <img  class="d-block w-100" src="img/clinicabanner.png"alt="...">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="img/grandes.jpg" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="img/estudiantes.jpg"  alt="...">
+            <img class="d-block w-100" src="img/especialidad.png" alt="...">
           </div>
           <div class="overlay">
             <div class="container d-flex h-100 align-items-center justify-content-center">
@@ -70,7 +66,7 @@
                 <div class="col-md-6 offset-md-2 text-center text-md-left">
                   <h1>Siempre estamos para acompañarte</h1>
                   <p class="d-none d-md-block" style="color:#f6f6f6">
-                    Te damos la facilidad de programar tu cita médica con antelación, para evitar molestas esperas y puedas aprovechar la máximo tu tiempo
+                    Te damos la facilidad de programar tu cita médica con antelación, para evitar molestas esperas y puedas aprovechar al máximo tu tiempo
                   </p>
                   <a href="#" class="btn btn-salle">Quiero Saber</a>
                   <button class="btn btn-comprar" href="#" type="button" data-toggle="modal" data-target="#Modal-compra">Comprar</button>
@@ -89,97 +85,104 @@
       <div class="container">
         <div class="row">
           <div class="col text-center text-uppercase">
-            <small>Conoce a los</small>
-             <h2>Médicos Veterinarios</h2>
+            <small>Conoce nuestros</small>
+             <h2>Servicios</h2>
           </div>
         </div>
         <div class="row">
 
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/medico1.jpg" class="card-img-top" alt="...">
+              <img src="img/medico.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <div class="badges">
-                  <span class="badge badge-success">Médico Internista</span>
-                  <span class="badge badge-danger">Experto</span>
+                  <span class="badge badge-danger">Presencial</span>
                 </div>
-                <h5 class="card-title">Cesar Cabrejo</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis, vero ipsa culpa nemo eum error fugiat sunt dicta voluptas..</p>
+                <h5 class="card-title" class="text-center">Consulta Pequeños Animales</h5>
+                <p class="card-text">Trabajamos para brindar lo mejor para a tu mascota, contamos con profesionales idóneos, que aman su labor y harán lo mejor por sus pacientes</p>
+                <button class="btn btn-comprar" class=""href="#" type="button" data-toggle="modal" data-target="#Modal-compra">Comprar</button>
               </div>
             </div>
           </div>
 
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/medica2.jpg" class="card-img-top" alt="...">
+              <img src="img/grandes.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <div class="badges">
-                  <span class="badge badge-success">Médico Internista</span>
-                  <span class="badge badge-primary">Cirujana</span>
+                  <span class="badge badge-danger">Presencial</span>
                 </div>
-                <h5 class="card-title mb-0">Alejandra Torres</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis, vero ipsa culpa nemo eum error fugiat sunt dicta voluptas..</p>
+                <h5 class="card-title" class="text-center">Consulta Grandes Animales</h5>
+                <p class="card-text">Queremos lo mejor para los pacientes, por lo que contamos con profesionales idóneos, que aman su labor y prestarán el mejor servicio. Grandes y medianas especies</p>
+                <button class="btn btn-comprar" class=""href="#" type="button" data-toggle="modal" data-target="#Modal-compra">Comprar</button>
               </div>
             </div>
           </div>
 
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/medico1.jpg" class="card-img-top" alt="...">
+              <img src="img/grandesconsulta.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <div class="badges">
-                  <span class="badge badge-success">Médico Internista</span>
-                  <span class="badge badge-primary">Cirujano</span>
+                  <span class="badge badge-success">Domiciliario</span>
                 </div>
-                <h5 class="card-title mb-0">Alvaro Rodriguez</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis, vero ipsa culpa nemo eum error fugiat sunt dicta voluptas..</p>
+                <h5 class="card-title" class="text-center">Consulta Domiciliaria Grandes Animales</h5>
+                <p class="card-text">Nuestros médicos, pueden desplazarse para desarrollar actividades presenciales</p>
+                <button class="btn btn-comprar" class=""href="#" type="button" data-toggle="modal" data-target="#Modal-compra">Comprar</button>
               </div>
             </div>
           </div>
 
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/medica2.jpg" class="card-img-top" alt="...">
+              <img src="img/rx.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <div class="badges">
-                  <span class="badge badge-success">Médico Internista</span>
-                  <span class="badge badge-dark">Médico Nocturno</span>
+                  <span class="badge badge-danger">Presencial</span>
                 </div>
-                <h5 class="card-title mb-0">Vanesa Bonilla</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis, vero ipsa culpa nemo eum error fugiat sunt dicta voluptas..</p>
+                <h5 class="card-title" class="text-center">Imágenes Diagnósticas Grandes y Pequeños Animales</h5>
+                <p class="card-text">Tenemos servicio de Radiografía y EcografIa, para varias especies animales</p>
+                <button class="btn btn-comprar" class=""href="#" type="button" data-toggle="modal" data-target="#Modal-compra">Comprar</button>
               </div>
             </div>
           </div>
 
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/medico1.jpg" class="card-img-top" alt="...">
+              <img src="img/medicovirtual.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <div class="badges">
-                  <span class="badge badge-success">Médico Internista</span>
-                  <span class="badge badge-info">Anestesiologo</span>
+                  <span class="badge badge-success">Remoto</span>
                 </div>
-                <h5 class="card-title mb-0">Ivan Martin</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis, vero ipsa culpa nemo eum error fugiat sunt dicta voluptas..</p>
+                <h5 class="card-title" class="text-center">Asesoria Médica Virtual</h5>
+                <p class="card-text">Tienes dudas sobre el estado de salud de tu mascota? o animales en general,no sabes si debes llevarla ya a la clínica? Comunicate con nosotros</p>
+                <button class="btn btn-comprar" class=""href="#" type="button" data-toggle="modal" data-target="#Modal-compra">Comprar</button>
               </div>
             </div>
           </div>
 
+        
+
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="img/medica2.jpg" class="card-img-top" alt="...">
+              <img src="img/laboratorio.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <div class="badges">
-                  <span class="badge badge-success">Médico Internista</span>
-                  <span class="badge badge-warning">Laboratorio Clínico</span>
+                  <span class="badge badge-danger">Presencial</span>
                 </div>
-                <h5 class="card-title mb-0">Nohora Patricia Moreno</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis, vero ipsa culpa nemo eum error fugiat sunt dicta voluptas..</p>
+                <h5 class="card-title" class="text-center">Laboratorio Clínico Veterinario</h5>
+                <p class="card-text">Nuestro grupo de profesionales están capacitados para realizar los exámenes y ayudar en la interpretación de sus resultados</p>
+                <button class="btn btn-comprar" class=""href="#" type="button" data-toggle="modal" data-target="#Modal-compra">Comprar</button>
               </div>
             </div>
           </div>
+
+
+
 
         </div>
+
+
       </div>
     </section>
     <!-- /Médicos-->
@@ -189,7 +192,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 col-lg-6 pl-0 pr-0">
-            <img src="img/direccion.png" alt="dirección"/>
+            <img src="img/mapa.png" alt="dirección"/>
           </div>
           <div class="col-12 col-lg-6 pt-4 pb-4">
             <h2>Estamos creciendo para ti</h2>
