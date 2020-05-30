@@ -88,4 +88,20 @@ h5 {
     font-family: sans-serif;
 }
 
+.card-body {
+    display: inline;
+    margin: 20px;
+}
+
+.row-services {
+    display: grid;
+    justify-content: center;
+}
+
+.card-services {
+    margin: 25px;
+}
+
+
+
 

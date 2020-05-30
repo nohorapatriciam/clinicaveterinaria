@@ -7,6 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="services.html">
     <title>Clinica Veterinaria App</title>
   </head>
   <body data-spy="scroll" data-target="#navbarSupportedContent">
@@ -29,15 +30,16 @@
             <a class="nav-link" href="#medicos" style="color:#003057;">Servicios</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-unisalle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-unisalle" href="services.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Urgencia o Emergencia?
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#place-time">Videollamada</a>
-              <a class="dropdown-item" href="#place-time">Chat</a>
+              <a class="dropdown-item" href="services.html">Videollamada</a>
+              <a class="dropdown-item" href="services.html">Chat</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#place-time">Asesoria General</a>
-            </div>
+                <a class="dropdown-item" href="services.html">Asesoria General</a>
+              </div>
+            </li>  
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" data-toggle="modal" data-target="#Modal-compra" style="color:#003057">Pagos en Linea</a>
@@ -68,7 +70,7 @@
                   <p class="d-none d-md-block" style="color:#f6f6f6">
                     Te damos la facilidad de programar tu cita médica con antelación, para evitar molestas esperas y puedas aprovechar al máximo tu tiempo
                   </p>
-                  <a href="#" class="btn btn-salle">Quiero Saber</a>
+                  <a href="services.html" class="btn btn-salle">Quiero Saber</a>
                   <button class="btn btn-comprar" href="#" type="button" data-toggle="modal" data-target="#Modal-compra">Comprar</button>
                 </div>
               </div>
@@ -177,11 +179,7 @@
             </div>
           </div>
 
-
-
-
         </div>
-
 
       </div>
     </section>
@@ -200,7 +198,10 @@
               Nos haces falta, por lo que estamos desarrollando herramientas que nos permitan estar más cerca y 
               poderte brindar un mejor servicio. 
             </p>
-            <button type="button" class="btn btn-danger">Quiero Saber</button>
+            <button class="btn btn-danger" >
+              <a style="color:white" href="services.html">Conócelos</a>
+            </button>
+
           </div>
         </div>
       </div>
